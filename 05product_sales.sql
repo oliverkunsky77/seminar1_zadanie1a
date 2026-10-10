@@ -1,1 +1,0 @@
-SELECT p.product_name, o.sales FROM orders o INNER JOIN products p ON o.product_id = p.product_id;
