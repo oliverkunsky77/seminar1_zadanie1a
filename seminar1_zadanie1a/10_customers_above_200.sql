@@ -1,0 +1,1 @@
+SELECT c.customer_name, SUM(o.sales) as total_sales FROM customers c INNER JOIN orders o ON c.customer_id = o.customer_id GROUP BY customer_name HAVING SUM(o.sales) > 2000 ;
